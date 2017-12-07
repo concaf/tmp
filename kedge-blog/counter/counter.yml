@@ -1,0 +1,9 @@
+name: counter
+
+containers:
+- image: containscafeine/counter:v2
+
+services:
+- portMappings:
+  - "5000"
+

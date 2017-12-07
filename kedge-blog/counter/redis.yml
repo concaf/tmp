@@ -1,0 +1,9 @@
+name: redis
+
+containers:
+- image: redis:3.0
+
+services:
+- portMappings:
+  - 6379
+
