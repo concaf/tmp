@@ -1,14 +1,12 @@
 Title - Journey of a developer, developing on Kubernetes
 
-It’s a new day, and you just got this exciting opportunity to bootstrap this new project that your team will be working on. You need to do it right, so you lay out all the components of your new application-would-be, and you create this shiny microservices architecture based components of your application.
+It’s a new day, and you need to bootstrap a new project with shiny microservices and containers. And you need to stay as close to production as you can be, and production runs Kubernetes.
 
-But in all of your previous projects, you have been used to either run your code locally on your bare machine or run your entire application stack using tools like Docker Compose.
+What you should do: write your code, build a container image, expose ports and environment variables
 
-But now, you need to stay as close to production as you can be, and production runs Kubernetes. It sounds and feels heavy, to learn the new vocabulary of DaemonSets, Pods, ConfigMaps, while all you want is to write your code, maybe build a container image, expose some ports and environment variables, and be done for your application for starters.
+What you will need to do: learn new Kubernetes vocabulary like Pod, Deployment, Services, Jobs, ConfigMap, Secret and then start writing code
 
-So you search on Google, “How to develop on Kubernetes locally” and you come to this blog, and “Hi, nice to meet you!”
-
-####Introducing _Kedge_
+#### Introducing _Kedge_
 
 Kedge lets you define your application in a very simple, quick and effortless manner, and deploys it to running Kubernetes clusters in one command.
 
@@ -135,3 +133,6 @@ That's it. This is the iterative and declarative workflow with Kedge that you ne
 Build, Push, Deploy -> Build, Push, Redeploy ...
 
 Kedge builds on top of the Kubernetes spec. It does not take anything away from the end user, there are no abstractions or reductions from the Kubernetes spec. So after a few days, if you wish to add Kubernetes objects like secrets, configMaps, initContainers, jobs, etc, you can do that in your Kedge file itself.
+
+
+
