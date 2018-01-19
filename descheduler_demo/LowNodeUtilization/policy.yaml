@@ -1,0 +1,14 @@
+apiVersion: "descheduler/v1alpha1"
+kind: "DeschedulerPolicy"
+strategies:
+  "LowNodeUtilization":
+     enabled: true
+     params:
+       nodeResourceUtilizationThresholds:
+         thresholds:  # any node below the following percentages is considered underutilized
+           "cpu" : 50
+         targetThresholds: # any node above the following percentages is considered overutilized
+           "cpu" : 80
+           "memory": 1
+           "pods": 1
+
