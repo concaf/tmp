@@ -1,0 +1,5 @@
+- cordon the nodes
+- `kedge create -f wordpress`
+- `kubectl scale deployment wordpress --replicas 5`
+- uncordon nodes
+- `descheduler --kubeconfig $KUBECONFIG --policy-config-file policy.yaml -v 5`
