@@ -1,0 +1,8 @@
+- cordon 1 node
+- `kubectl label node <node> isschedulable=yes`
+- `kedge create -f wordpress`
+- `kubectl scale deployment wordpress --replicas 5`
+- `kubectl label node <node> isschedulable=no`
+- cordon 1 node
+- `kubectl label node <node 2> isschedulable=yes`
+- `descheduler --kubeconfig $KUBECONFIG --policy-config-file policy.yaml -v 5`
